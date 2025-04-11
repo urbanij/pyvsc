@@ -1,0 +1,12 @@
+[project]
+name = "pyvsc"
+version = "0.1.0"
+description = ""
+requires-python = ">=3.8"
+
+dependencies = [
+    "pyucis",
+]
+
+[tool.uv.sources]
+pyucis = { git = "https://github.com/fvutils/pyucis.git" }
