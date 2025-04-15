@@ -1,0 +1,25 @@
+[project]
+name = "pyvsc"
+version = "0.1.0"
+description = ""
+requires-python = ">=3.8,<=3.12"
+
+dependencies = [
+  "pyboolector>=3.2.4.20240823.1 ; sys_platform == 'linux'",
+  "pyucis",
+]
+
+[project.optional-dependencies]
+dev = [
+  "ivpm",
+  "pyboolector",
+  "pylint",
+  "flake8",
+  "pytest",
+  "pytest-xdist",
+  "pytest-cov",
+  "toposort",
+]
+
+[tool.uv.sources]
+pyucis = { git = "https://github.com/fvutils/pyucis.git" }
